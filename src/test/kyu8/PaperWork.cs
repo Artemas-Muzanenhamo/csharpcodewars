@@ -10,11 +10,15 @@ namespace csharpcodewars.src.test.kyu8
         [Test]
         public void Test()
         {
-            Assert.That(Paper.Paperwork(5, 5), Is.EqualTo(25));
-            Assert.That(Paper.Paperwork(5, -5), Is.EqualTo(0));
-            Assert.That(Paper.Paperwork(-5, -5), Is.EqualTo(0));
-            Assert.That(Paper.Paperwork(-5, 5), Is.EqualTo(0));
-            Assert.That(Paper.Paperwork(5, 0), Is.EqualTo(0));
+            Assert.Multiple(() =>
+            {
+                Assert.That(Paper.Paperwork(5, 5), Is.EqualTo(25));
+                Assert.That(Paper.Paperwork(5, -5), Is.EqualTo(0));
+                Assert.That(Paper.Paperwork(-5, -5), Is.EqualTo(0));
+                Assert.That(Paper.Paperwork(-5, 5), Is.EqualTo(0));
+                Assert.That(Paper.Paperwork(5, 0), Is.EqualTo(0));
+            });
+
         }
     }
 }
