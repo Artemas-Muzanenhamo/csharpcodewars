@@ -1,9 +1,9 @@
-using System;
-using csharpcodewars.src.main.kyu8;
-using NUnit.Framework;
-
 namespace csharpcodewars.src.test.kyu8
 {
+    using System;
+    using csharpcodewars.src.main.kyu8;
+    using NUnit.Framework;
+
     [TestFixture]
     public class LightSabersTest
     {
