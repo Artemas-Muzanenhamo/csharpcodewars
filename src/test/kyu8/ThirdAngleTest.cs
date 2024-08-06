@@ -1,9 +1,9 @@
+using csharpcodewars.src.main.kyu8;
+using NUnit.Framework;
+using System;
+
 namespace csharpcodewars.src.test.kyu8
 {
-    using csharpcodewars.src.main.kyu8;
-    using NUnit.Framework;
-    using System;
-
     [TestFixture]
     public class ThirdAngleTest
     {
